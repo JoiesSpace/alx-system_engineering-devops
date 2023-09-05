@@ -1,2 +1,2 @@
 #!/bin/bash
-printf -v result "%d" "$((36#"$WATER" + 36#"$STIR"))"; printf "%s\n" "${result#36#}"
+echo "ibase=water;obase=bestchol;($WATER+$STIR)" | bc -l
